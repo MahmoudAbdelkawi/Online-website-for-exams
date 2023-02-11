@@ -1,0 +1,17 @@
+.outerBackground{
+    z-index: 1;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    .innerBackground{
+        overflow-y: scroll;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+    }
+}
+.checkbox{
+    width: 25px;
+    height: 25px;
+    margin: auto;
+}

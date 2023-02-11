@@ -1,0 +1,64 @@
+.main {
+    border-radius: 15px !important;
+    .clock {
+        color: blueviolet;
+    }
+    .question {
+        //background-color: #eee;
+        //margin: 10px 80px !important;
+        transition: 1s;
+        -webkit-transition: 1s;
+        -moz-transition: 1s;
+        -ms-transition: 1s;
+        -o-transition: 1s;
+        hr {
+            width: 88%;
+            margin: auto !important;
+            margin-top: 15px !important;
+        }
+    }
+    .radio {
+        position: relative;
+        &::before {
+            content: "";
+            width: 2px;
+            height: 0%;
+            background-color: blueviolet;
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transition: 0.2s;
+            transform: translateY(-50%);
+        }
+
+        border-color: rgb(167, 167, 167) !important;
+        .answerText {
+            transition: 0.7s;
+        }
+        &:hover {
+            background-color: #fff;
+            border: 0;
+            box-shadow: 0px 0.5px 3px rgb(92, 92, 92);
+            .answerText {
+                color: black !important;
+                transition: 0.7s;
+            }
+            transition: 0.7s;
+            &::before {
+                height: 100%;
+                transition: 0.2s;
+            }
+        }
+        transition: 0.7s;
+    }
+}
+
+
+.rotate {
+    animation:rotate 1s forwards ;
+}
+
+@keyframes rotate {
+    from {transform: rotate(0);}
+    to {transform: rotate(360deg);}
+  }
